@@ -1,9 +1,7 @@
 
-# SDMN CC Checker Bot
+# srf
 
-A Telegram CC Checker Bot with hella lotta features.
-
-
+A 
 ## 🚀 Features
 
 - **Admin Panel**
@@ -72,17 +70,4 @@ A Telegram CC Checker Bot with hella lotta features.
 **[Click Here to go to Heroku Version](https://github.com/iam-NVN/SDMN_CheckerBot/tree/heroku-version)**
 
 
-## 🎯 Author
-
-- [@iam-NVN](https://www.github.com/octokatherine)
-
-## 💸 Donations 
-If you're feeling generous and want to support this project, you can donate 
-
-<a href="https://www.blockchain.com/btc/address/1BNdZDEMfwaFfKULKucMkytXVqoWp4dfij">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WR24fnzSsiHf1TmpIWQn_E3qgJTLBcsK5w&usqp=CAU" alt="Bitcoin" height="25" style="margin-left: 15px;"/>
-</a> - Donate through Bitcoin
-
-
-  
-  
+##
