@@ -6,19 +6,43 @@ include __DIR__."/../config/variables.php";
 include __DIR__."/../config/config.php";
 
 ///////////==[DB Connection]==///////////
-$conn = mysqli_connect($config['db']['hostname'],$config['db']['username'],$config['db']['password'],$config['db']['database']);
 
-if(!$conn){
-    bot('sendmessage',[
-        'chat_id'=>$config['adminID'],
-        'text'=>"<b>🛑 DB connection Failed!
-        
-        ".json_encode($config['db'])."</b>",
-        'parse_mode'=>'html'
-        
-    ]);
 
-    logsummary("<b>🛑 DB connection Failed!\n\n".json_encode($config['db'])."</b>");
+function connect($hostname, $username, $password, $database)
+{
+    $conid = mysqli_connect($hostname, $username, $password, TRUE);
+
+
+    if($conid == FALSE)
+    {
+        if(DEBUG == TRUE)
+        {
+            show_error("MySQL Connection using `$hostname`, `$username`, `$password` was refused");
+        }
+
+        return;
+    }
+
+    else
+    {
+        $dbid = mysqli_select_db($database, $conid);
+
+        if($dbid == FALSE)
+        {
+            if(DEBUG == TRUE)
+            {
+                show_error("MySQL could not connect to database `$database`");
+            }
+
+            return;
+        }
+
+        else
+        {
+            self::$connections[] = $conid;
+            self::$connection    = $conid;
+        }
+    }
 }
 
 ////////////////////////////////////////////
