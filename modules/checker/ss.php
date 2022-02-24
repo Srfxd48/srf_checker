@@ -33,7 +33,7 @@ if(strpos($message, "/ss ") === 0 || strpos($message, "!ss ") === 0){
     }else{
         $messageidtoedit1 = bot('sendmessage',[
           'chat_id'=>$chat_id,
-          'text'=>"<b>Wait for Result...</b>",
+          'text'=>"<b>RUKO JARA SABAR KARO...</b>",
           'parse_mode'=>'html',
           'reply_to_message_id'=> $message_id
 
@@ -219,7 +219,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/srfxd'>srfxd</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
@@ -246,7 +246,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/srfxd'>srfxd</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
@@ -273,7 +273,7 @@ Time -» <b>$time</b><b>s</b>
 <b>----------------------------</b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/ninjanaveen'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/srfxd'>sharif xd</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
